@@ -26,7 +26,7 @@ module.exports = {
             //mapping in apiresponse om in de array te kunnen zien waar de tijden/weersomstandigheden staan.
             result.data.list.map(listObj =>{
            //  console.log('De voorspelde weeromstandigheden zijn '+listObj.weather[0].description+' rond het tijdstip '+listObj.dt_txt);  
-             agent.add('The weather forecast are: '+listObj.weather[0].description+' around '+listObj.dt_txt);            
+             agent.add('The weather forecast is: '+listObj.weather[0].description+' at around '+listObj.dt_txt);            
             })
        })
         } 
