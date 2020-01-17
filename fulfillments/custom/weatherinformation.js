@@ -30,6 +30,9 @@ module.exports = {
             })
        })
         } 
+        else if(timestamp < currentTime){
+            agent.add('The date you provided is in the past, I can only give you the current weather or a forecast. Could you reformulate your question so I can respond properly?')
+        }
         else {
             agent.add(
                 `The information provided is false! Can you reformulate your question please? Sorry for the inconvenience.`
